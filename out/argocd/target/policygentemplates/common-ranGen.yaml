@@ -1,0 +1,37 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  name: "common"
+  namespace: "ztp-common"
+spec:
+  bindingRules:
+    common: "true"
+  sourceFiles:
+    - fileName: LvmsNS.yaml
+      policyName: "subscriptions-policy"
+    - fileName: LvmsOperGroup.yaml
+      policyName: "subscriptions-policy"
+    - fileName: LvmsSubscription.yaml
+      policyName: "subscriptions-policy"
+    - fileName: LvmsOperatorStatus.yaml
+      policyName: "subscriptions-policy"
+    - fileName: ReduceMonitoringFootprint.yaml
+      policyName: "config-policy"
+    - fileName: OperatorHub.yaml
+      policyName: "config-policy"
+    - fileName: DefaultCatsrc.yaml
+      policyName: "config-policy"
+      metadata:
+        name: redhat-operators
+      spec:
+        displayName: disconnected-redhat-operators
+        image: bastion.dual.local:5000/olm12/redhat/redhat-operator-index:v4.12
+    - fileName: DisconnectedICSP.yaml
+      policyName: "config-policy"
+      spec:
+        repositoryDigestMirrors:
+        - mirrors:
+          - bastion.dual.local:5000/olm12
+          source: registry.redhat.io
+

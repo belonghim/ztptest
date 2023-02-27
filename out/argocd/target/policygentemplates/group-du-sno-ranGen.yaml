@@ -1,0 +1,28 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  name: "group-du-sno"
+  namespace: "ztp-group"
+spec:
+  bindingRules:
+    group-du-sno: ""
+  mcp: "master"
+  sourceFiles:
+    - fileName: ConsoleOperatorDisable.yaml
+      policyName: "config-policy"
+    - fileName: LVMCluster.yaml
+      policyName: "config-policy"
+    - fileName: DisableSnoNetworkDiag.yaml
+      policyName: "config-policy"
+    - fileName: PerformanceProfile.yaml
+      policyName: "config-policy"
+      spec:
+        cpu:
+          isolated: "1-7"
+          reserved: "0"
+        hugepages:
+          defaultHugepagesSize: 2M
+          pages:
+            - size: 2M
+              count: 1
