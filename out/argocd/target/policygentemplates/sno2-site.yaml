@@ -27,11 +27,3 @@ spec:
       spec:
         displayName: disconnected-redhat-operators
         image: bastion.dual.local:5000/olm12/redhat/redhat-operator-index:v4.12
-    - fileName: DisconnectedICSP.yaml
-      policyName: "config-policy"
-      spec:
-        repositoryDigestMirrors:
-        - mirrors:
-          - bastion.dual.local:5000/olm12
-          source: registry.redhat.io
-
