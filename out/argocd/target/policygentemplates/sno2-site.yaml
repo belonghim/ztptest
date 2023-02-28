@@ -8,7 +8,7 @@ spec:
   bindingRules:
     sites: "sno2"
   sourceFiles:
-    - fileName: StorageLVMOSubscriptionNS.yaml
+    - fileName: LvmsNS.yaml
       policyName: "subscriptions-policy"
     - fileName: LvmsOperGroup.yaml
       policyName: "subscriptions-policy"
