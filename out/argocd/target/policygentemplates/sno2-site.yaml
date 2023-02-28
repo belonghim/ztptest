@@ -4,6 +4,8 @@ kind: PolicyGenTemplate
 metadata:
   name: "sno2"
   namespace: "ztp-site"
+  annotations:
+    ran.openshift.io/ztp-deploy-wave: "2"
 spec:
   bindingRules:
     sites: "sno2"
