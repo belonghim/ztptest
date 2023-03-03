@@ -5,4 +5,4 @@ generators:
 #- example-sno.yaml
 #- example-3node.yaml
 #- example-standard.yaml
-#- sno2.yaml
+- sno2.yaml
