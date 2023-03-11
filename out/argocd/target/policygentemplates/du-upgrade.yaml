@@ -20,10 +20,10 @@ spec:
       spec:
         repositoryDigestMirrors: 
           - mirrors:
-            - test07.gpskr.local:5000/ocp412/openshift5
+            - test07.gpskr.local:5000/ocp412/openshift5/openshift/release
             source: quay.io/openshift-release-dev/ocp-release
           - mirrors:
-            - test07.gpskr.local:5000/ocp412/openshift5
+            - test07.gpskr.local:5000/ocp412/openshift5/openshift/release
             source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
     - fileName: ClusterVersion.yaml 
       policyName: "platform-upgrade-prep"
@@ -34,6 +34,8 @@ spec:
       spec:
         channel: "stable-4.12"
         upstream: http://bastion.dual.local:8888/images/upgrade-graph_stable-4.12
+        desiredUpdate:
+          version: 4.12.5
     - fileName: ClusterVersion.yaml 
       policyName: "platform-upgrade"
       metadata:
