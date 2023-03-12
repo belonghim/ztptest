@@ -12,7 +12,7 @@ spec:
     - fileName: ImageSignature.yaml 
       policyName: "platform-upgrade-prep"
       binaryData:
-        -:  
+        sha256-fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4: owGbwMvMwMEoOU9/4l9n2UDGtYzJSWLxRQW5xZnpukWphbqVjlEG/qV6SZl5yd9K8qqVkosySzKTE3OUrBSqlTJzE9NTwayU/OTs1CLd3MS8zLTU4hLdlMx0IAWUUirOSDQyNbNKSzEzTU5NSk41NDVISkw2TjYzMko1Nkg1TzM3M0oxNjQ3NjU3TUw1NjUxTDJONDczsbAwtExOMjNOtQQSiSZKtToKSiWVBSDrlBJL8nMzkxWS8/NKEjPzUosUgK7NSywpLUpVAqrKTEnNK8ksqUR2WFFqWmpRal4yWHthaWKlXma+fn5Bal5xRmZaCVA6JzWxOFU3JbVMPz+5AMa3MtEzNNIz1a2wMIs3AzoB5Ib8gpLM/DxoACQXpQLdUgQyNCg1RcEjsUTBH2hoMMhQhWCgozLz0hUcS0sy8oHBVqlgoGegZwg0ppNJlJmVARSg8IDn+HCc/6/E3bilB7Y1PT2zZYolc/K3FXZWT7Y8FUjJ/vnxS+WJJ//kf8osv8rQZZ2je+vsgYiPf9cmz2vbvH/OrbgHO89cf3G2mtXCMbTvHNNS15/TD3ZdPJ7OfSLAcs+FalG76KMZNbKf5y2W73KOczO7c0FH9unLfuNo1hv3whatfCb9IP/8lZMfkuYovU9TXnKT89zk/UrJU88Hxn1Om8wY/9yirHFJ8ekGJnujjjL9u39mrvFuv/y+cbfbo223Egp/JzF7ZjNJl815emvfzrKCwj8RR3Ik5vPsmb5Wmun/m9mHNjgIL/rwY8r+RafkDgdxva1pkWEwOnp7jaHS+nJP6U8GBoElX17UdzRtM5fZvoTLJvzBFccNtx4kJh6S4NzvoKDoe2R756P9OpevPDjBt+VCwK0p3ZHr1ZbKHlsjWacySWf+qWIdixnzbxe7n74533rFMt7jsTGKG6pUz041ai7+1/n+x5uG0ihWBpc5Gb53jq1ouBiV/HMJ+zdJi7yjh649cVmw9IOixMtV91zC/j9b/vfJxu1eB+PWC0nunKase89+RzjD7a7uCb9W5jxr59Od/fpUxpU3E+7vVYrkLNl64tPSOlWf0NSGxo7gV7W/Xr/0Ws+QFmu+/IjAdjbXTNcJsmrC+b+VeRb9P/z9mFnEMfWNuqkfxNeyV/kbXVJh/a0jfihujtWnR/d2vtvOWVi8RuFUxO3ufJs2E4kP9asA 
     - fileName: DisconnectedICSP.yaml
       policyName: "platform-upgrade-prep"
       metadata:
