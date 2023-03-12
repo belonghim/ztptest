@@ -1,0 +1,14 @@
+apiVersion: ran.openshift.io/v1alpha1
+kind: ClusterGroupUpgrade
+metadata:
+  name: cgu-platform-upgrade
+  namespace: default
+spec:
+  managedPolicies:
+  - du-upgrade-platform-upgrade
+  preCaching: false
+  clusters:
+  - sno2
+  remediationStrategy:
+    maxConcurrency: 1
+  enable: false

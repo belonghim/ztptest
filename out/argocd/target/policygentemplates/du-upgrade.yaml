@@ -36,6 +36,7 @@ spec:
         upstream: http://bastion.dual.local:8888/images/upgrade-graph_stable-4.12
         desiredUpdate:
           version: 4.12.5
+          image: test07.gpskr.local:5000/ocp412/openshift5/openshift/release-images@sha256:fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4
     - fileName: ClusterVersion.yaml 
       policyName: "platform-upgrade"
       metadata:
@@ -45,6 +46,7 @@ spec:
         upstream: http://bastion.dual.local:8888/images/upgrade-graph_stable-4.12
         desiredUpdate:
           version: 4.12.5
+          image: test07.gpskr.local:5000/ocp412/openshift5/openshift/release-images@sha256:fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4
       status:
         history:
           - version: 4.12.5
