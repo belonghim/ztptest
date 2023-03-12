@@ -12,7 +12,7 @@ spec:
     - fileName: ImageSignature.yaml 
       policyName: "platform-upgrade-prep"
       binaryData:
-        sha256-800d1e39d145664975a3bb7cbc6e674fbf78e3c45b5dde9ff2c5a11a8690c87b: owGbwMvMwMEoOU9/4l9n2UDGtYzJSWLxRQW5xZnpukWphbqZrl6OBrl6SZl5yf933q9WSi7KLMlMTsxRslKoVsrMTUxPBbNS8pOzU4t0cxPzMtNSi0t0UzLTgRRQSqk4I9HI1MzKwsAgxTDV2DLF0MTUzMzE0tw00TgpyTw5Kdks1czcJC0pzdwi1TjZxDTJNCUl1TItzSjZNNHQMNHCzNIg2cI8SalWR0GppLIAZJ1SYkl+bmayQnJ+XkliZl5qkQLQtXmJJaVFqUpAVZkpqXklmSWVyA4rSk1LLUrNSwZrLyxNrNTLzNfPL0jNK87ITCsBSuekJhan6qaklunnJxfA+FYmeoZGema6FRZm8WYmSrUgN+QXlGTm50EDILkoFeiWIpChQakpCh6JJQr+QEODQYYqBAMdlZmXruBYWpKRDwy2SgUDPQM9Q6AxnUyizKwMoACFBzxHq7AAQ6dZz8HFLAbuKw9rcp1lccyWTom+tFFv82SR3d/6TZZOsbDaan92b1bdVo9VZl+5X13ZOi1F7HsrB//SmSdsD2SfnhX1ZK7TskvzuvutnqYpzkz3dsqxKNAsMbua7+HZpcYWVtjmsvh2vs+PDdfeetns5HtfdJDx3pHJiVe3rlzxZWpIWmCY6Cnh31O2Lw1h5ta41XQpxWu+W/LqGccmTm+Qmja9tHf+g92lYsKhD77V2nt+ebhpT1xQwrf6dypzp0bW7jxXUKl2vFX+pEjPZuPYpzwu+8TlgwXmvQmezrXw2GsPbjbBZZtCtouEdC14O6c0LcXKb1c20ysd2R2lU3+5Jyyb0qK59dEizd7rD/eu4Fr5bd+Xyq5zijn/Dtp5x/TVS2zOLQkwD24+LHBUJqzzypcHbxjnWldcUfh7svbqynvGfa1f3rQmVVrM73jsKvFQoMb59POayRFTpqft67TWMBFW6lDxazA/v0L5ZcD3NS17J155s1FLsGfzmfsm6gVH1JJXWcu5X/P+U3KzX6MtMGrtmdrcmjvrt6+YefLzttwXKbpRKs5XWtz2PVU0XP709//OB33VM6xZZn18xvHtzLO6te0acr0XJ0dIRF5d8vvb6eO1Sgm3fsRN3K8pojw74fr/Q6f+s7MXOMhKTHfm350WVfPtVR4P02o/hXOPzDJknUykVnZN/Xvs8tdgD91f3AcWpVjIz97+9QsA 
+        -:  
     - fileName: DisconnectedICSP.yaml
       policyName: "platform-upgrade-prep"
       metadata:
@@ -35,7 +35,6 @@ spec:
         channel: "stable-4.12"
         upstream: http://bastion.dual.local:8888/images/upgrade-graph_stable-4.12
         desiredUpdate:
-          version: 4.12.5
           image: test07.gpskr.local:5000/ocp412/openshift5/openshift/release-images@sha256:fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4
     - fileName: ClusterVersion.yaml 
       policyName: "platform-upgrade"
@@ -45,9 +44,8 @@ spec:
         channel: "stable-4.12"
         upstream: http://bastion.dual.local:8888/images/upgrade-graph_stable-4.12
         desiredUpdate:
-          version: 4.12.5
           image: test07.gpskr.local:5000/ocp412/openshift5/openshift/release-images@sha256:fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4
       status:
         history:
-          - version: 4.12.5
+          - image: test07.gpskr.local:5000/ocp412/openshift5/openshift/release-images@sha256:fd65cebce150bac3c622e30e7f762d3173575ae3541b3a7648819cb63e9b63a4
             state: "Completed"
