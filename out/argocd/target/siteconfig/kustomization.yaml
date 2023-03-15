@@ -6,3 +6,6 @@ generators:
 #- example-3node.yaml
 #- example-standard.yaml
 #- sno2.yaml
+
+resources:
+- sno2-secret.yaml
